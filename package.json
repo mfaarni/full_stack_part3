@@ -11,6 +11,9 @@
     "deploy:full": "npm run build:ui && npm run deploy",
     "lint": "eslint ."
   },
+  "engines": {
+    "node": ">=20"
+  },
   "proxy": "http://localhost:3001",
   "author": "",
   "license": "ISC",
@@ -29,9 +32,6 @@
   "devDependencies": {
     "eslint": "^8.50.0",
     "nodemon": "^2.0.22"
-  },
-  "engines": {
-    "node": ">=18"
   }
 
 }
