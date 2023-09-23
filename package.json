@@ -8,7 +8,8 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "build:ui": "rm -rf build && cd ~/full-stack/osa_2/puhelinluettelo && npm run build && cp -r build ~/full_stack_part3",
-    "deploy:full": "npm run build:ui && npm run deploy"
+    "deploy:full": "npm run build:ui && npm run deploy",
+    "lint": "eslint ."
   },
   "proxy": "http://localhost:3001",
   "author": "",
@@ -26,6 +27,7 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "eslint": "^8.50.0",
     "nodemon": "^2.0.22"
   }
 }
